@@ -1,0 +1,5 @@
+﻿  main.cpp
+  ClientSocket.cpp
+c:\users\артем\documents\trueconftest2-master\testtask2_client\clientsocket.cpp(80): warning C4244: =: преобразование "std::streamoff" в "size_t", возможна потеря данных
+  Создание кода...
+  TestTask2_client.vcxproj -> C:\Users\Артем\Documents\TrueConfTest2-master\Debug\TestTask2_client.exe
