@@ -2,9 +2,7 @@
 #include <iostream>
 #include <string>
 
-Exception::Exception(int err_no, std::string err_msg) :
-											error_number(err_no),
-											error_message(err_msg)
+Exception::Exception(int err_no, std::string err_msg) :	error_number(err_no), error_message(err_msg)
 {
 
 }
