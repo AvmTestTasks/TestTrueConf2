@@ -106,7 +106,8 @@ void ServerSocket::Listen()
 
 			//receive file data
 			size_t filedata_received = 0;
-			while (filedata_received < messageLength) {
+			while (filedata_received < messageLength) 
+			{
 				vector<char> filedata_buf(messageLength);
 				int filedata_read = 0;
 				if (filedata_received == 0) {
