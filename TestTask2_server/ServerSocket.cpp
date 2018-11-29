@@ -62,7 +62,8 @@ void ServerSocket::Listen()
 			while (length_received < length_maxlen)
 			{
 
-				int length_read = recv(ConnectFD, (char *)&messageLength + length_received, length_maxlen - length_received, 0);
+				int length_read = recv(ConnectFD, (char *)&messageLength + length_received,
+						       length_maxlen - length_received, 0);
 				if (length_read == SOCKET_ERROR)
 				{
 					int er_code = WSAGetLastError();
@@ -80,7 +81,8 @@ void ServerSocket::Listen()
 			while (filename_received < filename_maxlen)
 			{
 				vector<char> filename_buf(filename_maxlen);
-				int filename_read = recv(ConnectFD, filename_buf.data() + filename_received, filename_maxlen - filename_received, 0);
+				int filename_read = recv(ConnectFD, filename_buf.data() + filename_received,
+							 filename_maxlen - filename_received, 0);
 				if ((filename_read == SOCKET_ERROR) || (filename_read == 0))
 				{
 					int er_code = WSAGetLastError();
